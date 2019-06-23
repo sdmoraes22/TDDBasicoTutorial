@@ -19,5 +19,19 @@ namespace ProjetoTeste
             var calculadora = new Calculadora();
             Assert.IsTrue(calculadora.Multiplicar(4, 4) == 16);
         }
+
+        [TestMethod]
+        public void TestarSubtracaoEntreDoisNumeros()
+        {
+            var calculadora = new Calculadora();
+            Assert.IsTrue(calculadora.Subtrair(10, 2) == 8);
+        }
+
+        [TestMethod]
+        public void TestarDivisaoEntreDoisNumeros()
+        {
+            var calculadora = new Calculadora();
+            Assert.IsTrue(calculadora.Dividir(60, 2) == 30);
+        }
     }
 }
